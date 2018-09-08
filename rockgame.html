@@ -2,11 +2,40 @@
 <html>
 <head>
 	<title>Rock Paper Scissors</title>
-	<script type="text/javascript" src="rock.js"></script>
-	<link rel="stylesheet" type="text/css" href="rock.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
 <body>
-	<h1>A game of Rock, Paper and Scissors</h1>
+	<div class="jumbotron myjumbotron">
+        <h1 class="display-4">Rock | Paper | Scissors</h1>
+    </div>
+	<div class="buttonbox">
+		<button class="rockb"><i class="fas fa-hand-rock left"></i></button>
+		<button class="paperb"><i class="fas fa-hand-paper center"></i></button>
+		<button class="scissorsb"><i class="fas fa-hand-scissors right"></i></button>
+	</div>
 
+	<div class="container">
+	    <div id="playscore">
+		    <p>Player Score:</p>
+		    <h2 id="playerScore">0</h2>
+	    </div>
+	    <div id="compscore">
+		    <p>Computer Score:</p>
+		    <h2 id="computerScore">0</h2>
+		</div>
+	</div>
+
+	<div>
+		<h1 id="message">Your Move!</h1>
+	</div>
+	<div class="resetb">
+		<button id="resetme">Reset</button>
+	</div>
 </body>
+
+
+<script type="text/javascript" src="rock.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+
 </html>
